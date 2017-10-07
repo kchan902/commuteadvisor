@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.13/moment-timezone-with-data-2012-2022.js"></script>
+  </head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">
+          <h3>COMMUTE ADVISOR</h3>
+        </a>
+        <img class="logo" src = "assets/images/Partly Cloudy.png" alt="cute emoji">
+      </div>
+    </div>
+  </nav>
+
+  <div class="inputContainer">
+
+    <input id="origin-input" class="controls transform2" type="text"
+        placeholder="Origin location">
+
+    <input id="destination-input" class="controls transform2 " type="text"
+        placeholder="Destination location">
+
+    <div id="mode-selector" class="controls transform2">
+      <input type="radio" name="type" id="changemode-walking" checked="checked">
+      <label for="changemode-walking">Walking</label>
+
+      <input type="radio" name="type" id="changemode-transit">
+      <label for="changemode-transit">Transit</label>
+
+      <input type="radio" name="type" id="changemode-driving">
+      <label for="changemode-driving">Driving</label>
+    </div>
+    </div>
+
+<div class="loginWrapper transform2">
+
+  <div class="row section login">
+    <div class="col">
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+    </div>
+  </div>
+</div>
+
+    <div class="mapWrapper transform2">
+
+      <div class="infoBox transform">
+        <button id="close">Information</button>
+        <div class="destinationInfo"></div>
+
+      </div>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h1>Login</h1>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label class="formLabel" for="icon_prefix">Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="icon_email" type="email" class="validate">
+                  <label class="formLabel" for="icon_email">Email</label>
+                </div>
+                <button class=" modalSubmit btn waves-effect waves-light" type="submit" name="action" formaction="./index.html">Submit
+                </button>
+                <a class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPohRT1xe96u7JVPsKDHGNMi4gRWj4AAw&libraries=places&callback=initMap"
+    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPohRT1xe96u7JVPsKDHGNMi4gRWj4AAw&libraries=geometry">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app2.js"></script>
+  </body>
+</html>

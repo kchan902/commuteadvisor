@@ -1,0 +1,268 @@
+.modal-overlay {
+  display: none !important;
+}
+input {
+  color: black !important;
+}
+.btn {
+  margin-left: 12px;
+  border-radius: 25px !important;
+  box-shadow: 1px 1px 1px black !important;
+  right: -350px;
+  top: 15px !important;
+  padding:  13px !important;
+  line-height: 3px !important;
+  height: 27px !important;
+}
+.modal-content {
+  padding: 0px !important;
+}
+.modal {
+width: 100% !important;
+}
+.logo {
+  height: 50px;
+  width: 100px;
+  margin: 8px;
+}
+label {
+  color: white] !important;
+}
+.formLabel {
+  color: #26a69a !important;
+}
+.backgroundpic {
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  text-align: center;
+  background-color: #4484CE;
+  padding: 20px;
+  margin: 0px;
+  color: white;
+  font-family: 'orangejuice';
+}
+
+@font-face {
+  font-family: "orangejuice";
+  src: url("orangejuice.ttf");
+
+}
+
+.button-class  text-align: center;
+}
+
+.container-fluid {
+  padding-bottom: 5px;
+}
+ .navbar-default {
+  margin-bottom: 0px !important;
+}
+.form-control {
+  position: relative;
+}
+.inputContainer {
+  position: absolute !important;
+}
+#map {
+  height: 100%;
+  z-index: 1;
+  margin: 0px;
+  top: 0;
+  overflow: hidden;
+}
+a {
+  background-color: #4484CE;
+}
+.container-fluid {
+  background-color: #4484CE;
+}
+h3 {
+  font-size: 30px !important;
+  margin: 2px !important;
+  color: white !important;
+  font-family: 'orangejuice' !important;
+  float: left;
+  margin-top: 14px !important;
+
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+  height: 30px;
+  border-radius: 100px;
+  z-index: 9999 !important;
+
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe;
+}
+
+#mode-selector {
+  color: #fff;
+  top: -10px !important;
+  background-color: #4d90fe;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+  border-radius: 100px;
+}
+
+#mode-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+}
+.mapWrapper {
+  position: absolute;
+  z-index: 1000;
+  top: 100px;
+  color: white;
+}
+.loginWrapper {
+  position: absolute;
+  z-index: 1000;
+  top: -12px;
+  color: white;
+
+}
+.infoBox {
+  overflow: hidden;
+  background-color: #4d90fe;
+  width: 86px;
+  height: 27px;
+  border-radius: 13px;
+  margin-left: 12px;
+  display: inline-block;
+  box-shadow: 0 2px 6px black;
+}
+.transform {
+  transition: all .8s ease;
+}
+.transform2 {
+  transition: all .8s ease;
+}
+.transform-active {
+  height: 250px;
+  width: 200px;
+  padding-left: 10px;
+  margin-left: 0px;
+}
+#close {
+  z-index: 1;
+  border-color: #6cace2;
+  border-radius: 100px;
+  background-color: #4484ce;
+  box-shadow: 1px 2px 2px black;
+}
+.modalSubmit {
+  left: 0px;
+  top: 6px !important;
+}
+.modal-close {
+  float: right;
+}
+
+@media screen and (max-width: 768px) {
+#infoBox {
+  width: 220px;
+}
+  .inputContainer {
+    position: absolute;
+  }
+  #origin-input {
+    position: relative;
+    border-radius: 100px ;
+    margin-top: 10px;
+  }
+  #destination-input {
+    margin-top: 50px;
+    position: relative;
+    border-radius: 100px ;
+    left: 0 !important;
+  }
+  #mode-selector {
+    margin-top: 90px !important;
+    border-radius: 100px;
+    position: relative;
+    left: 0 !important;
+    top: 0px !important;
+  }
+  .mapWrapper {
+    top: 197px;
+  }
+  .btn {
+    top: 15px !important;
+    right: -350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #map {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .btn {
+    top: 15px !important;
+    right: -350px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #infoBox {
+    width: 195px;
+  }
+  #close {
+    left: 0;
+  }
+  #origin-input {
+    margin-left: 0px;
+  }
+  #destination-input {
+    margin-left: 0px;
+  }
+  #mode-selector {
+    margin-left: 0px;
+  }
+  .btn {
+    right: -215px;
+    top: 65px !important;
+  }
+  .modalSubmit {
+    top: 0px !important;
+  }
+}
+
+.condition {
+  margin-left: 10px;
+}
