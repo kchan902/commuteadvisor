@@ -152,7 +152,7 @@ AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(aut
             console.log(stateName)
             console.log(cityName)
 
-            var queryURL = "http://api.wunderground.com/api/badbf91cbcaea172/hourly/q/" + stateName + "/" + cityName + ".json"
+            var queryURL = "https://api.wunderground.com/api/badbf91cbcaea172/hourly/q/" + stateName + "/" + cityName + ".json"
 
             $.ajax({
                 url: queryURL,
@@ -239,7 +239,7 @@ AutocompleteDirectionsHandler.prototype.route = function() {
 
  function getTimeZoneTime(slat, slng, elat, elng) {
      var compareArray = [slat, slng, elat, elng]
-     var queryURLs = ["http://api.timezonedb.com/v2/get-time-zone?key=WE21E5J1HORM&format=json&by=position&lat=" + slat + "&lng=" + slng + "", "http://api.timezonedb.com/v2/get-time-zone?key=WE21E5J1HORM&format=json&by=position&lat=" + elat + "&lng=" + elng + ""]
+     var queryURLs = ["https://api.timezonedb.com/v2/get-time-zone?key=WE21E5J1HORM&format=json&by=position&lat=" + slat + "&lng=" + slng + "", "https://api.timezonedb.com/v2/get-time-zone?key=WE21E5J1HORM&format=json&by=position&lat=" + elat + "&lng=" + elng + ""]
      if (positionArray.length === 0 || positionArray === compareArray) {
 
          positionArray = [slat, slng, elat, elng]
