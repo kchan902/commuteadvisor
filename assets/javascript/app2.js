@@ -172,7 +172,7 @@ AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(aut
                 $(".destinationInfo").append(
                   "<span class=" + temperature + ">" + temperature.english + " degrees</span>"
                 );
-
+                /*
                 var iconConditionMap = {
                   "Sunny" : "assets/images/sunny.png",
                   "Chance of Rain" : "assets/images/Chance of Rain.png",
@@ -189,7 +189,7 @@ AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(aut
                   "Thunderstorms": "assets/images/Thunderstorms.png"
 
                 }
-
+                */
                 $(".destinationInfo").append(
                   "<span class='condition " + iconNew + "''>" + iconNew + "</span>" +
                   "<img src='" + iconConditionMap[iconNew] + "'/>"
