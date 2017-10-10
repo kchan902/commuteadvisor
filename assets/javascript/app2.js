@@ -192,7 +192,7 @@ AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(aut
                 */
                 $(".destinationInfo").append(
                   "<span class='condition " + iconNew + "''>" + iconNew + "</span>" +
-                  "<img src='" + iconConditionMap[iconNew] + "'/>"
+                  "<img src='assets/images/"+ iconNew +".png'/>"
 
                );
               });
